@@ -1,17 +1,20 @@
---Viewing the whole columns in Coviddeath table
+/*This is a portfolio project on covid 19. The tables contained are covid-19 deaths and vaccinations for every country between the period it was first discovered.
+The data set was gotten from kaggle  and was loaded into the database I created named PorfolioProject.*/
+
 Use PortfolioProject
 
+-- Viewing all the dataset in covid death table
 SELECT *
 FROM CovidDeaths
-ORDER BY 3,4
+--ORDER BY 3,4
 
 --Viewing the whole  columns in covid vaccinations table
 
 SELECT *
 FROM CovidVaccinations
-ORDER BY 3,4
+--ORDER BY 3,4
 
---
+--Using the order by clause to view some column in the data set.
 SELECT location, date , total_cases, new_cases, total_deaths, population
 FROM  CovidDeaths
 ORDER BY 1,2
